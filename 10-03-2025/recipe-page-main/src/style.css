@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --stone-100: hsl(30, 54%, 90%);
+  --stone-150: hsl(30, 18%, 87%);
+  --stone-600: hsl(30, 10%, 34%);
+  --rose-800: hsl(332, 51%, 32%);
+  --rose-50: hsl(330, 100%, 98%);
+  --brown-800: hsl(14, 45%, 36%);
+  --stone-900: hsl(24, 5%, 18%);
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url("../assets/fonts/outfit/Outfit-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "YoungSerif";
+  src: url("../assets/fonts/young-serif/YoungSerif-Regular.ttf");
+}
+
+.ff-outfit {
+  font-family: "Outfit";
+}
+.ff-young-serif {
+  font-family: "YoungSerif";
+}
+
+.clr-rose-800 {
+  color: var(--rose-800);
+}
+.clr-brown-800 {
+  color: var(--brown-800);
+}
+.clr-stone-900 {
+  color: var(--stone-900);
+}
+
+.bg-rose-800 {
+  background-color: var(--rose-800);
+}
+.bg-rose-50 {
+  background-color: var(--rose-50);
+}
+.bg-white {
+  background: var(--white);
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+.fw-600 {
+  font-weight: 600;
+}
+.fw-700 {
+  font-weight: 700;
+}
+
+.fs-400 {
+  font-size: medium;
+}
+.fs-600 {
+  font-size: x-large;
+}
+.fs-700 {
+  font-size: xx-large;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+.p-i-1 {
+  padding-inline: 1rem;
+}
+.p-i-2 {
+  padding-inline: 2rem;
+}
+.p-b-1 {
+  padding-block: 1rem;
+}
+.p-2 {
+  padding: 2rem;
+}
+.p-5 {
+  padding: 5rem;
+}
+
+.m-1 {
+  margin: 1rem;
+}
+.m-b-1 {
+  margin-block: 1rem;
+}
+.m-i-1 {
+  margin-inline: 1rem;
+}
+.m-i-2 {
+  margin-inline: 2rem;
+}
+
+.br-1 {
+  border-radius: 1rem;
+}
+
+.grid {
+  display: grid;
+  gap: 0.4rem;
+}
+.g-1 {
+  gap: 1rem;
+}
+.g-2 {
+  gap: 2rem;
+}
+.g-3 {
+  gap: 3rem;
+}
+.g-4 {
+  gap: 4rem;
+}
+
+.grid-1fr-1fr {
+  grid-template-columns: 1fr 1fr;
+}
+
+.li-color {
+  list-style-image: var(--rose-800);
+}
+
+.list-section {
+  li {
+    margin: 0rem 0rem 0rem 1rem;
+    padding: 0rem 0rem 0rem 1rem;
+  }
+}
+
+.container {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+body {
+  padding: 5rem;
+}
+
+.header img {
+  border-radius: 1rem;
+}
+
+main {
+  padding: 2rem;
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    padding: 0rem;
+  }
+
+  .header img {
+    border-radius: 0rem;
+  }
+  .header h1,
+  .header p {
+    padding-inline: 1rem;
+  }
+
+  main {
+    padding: 0rem;
+  }
+
+  .sections {
+    padding-inline: 1rem;
+  }
+
+  .container {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
