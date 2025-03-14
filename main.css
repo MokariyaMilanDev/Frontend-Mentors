@@ -1,0 +1,12 @@
+@import url("./global.css");
+
+.projects {
+  .project_card {
+    border: 1px solid var(--color-neutral-1000);
+    grid-template-columns: minmax(auto, 200px) 1fr;
+
+    img {
+      object-fit: cover;
+    }
+  }
+}
