@@ -1,0 +1,97 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-yellow: hsl(47, 88%, 63%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-gray-500: hsl(0, 0%, 42%);
+  --color-gray-950: hsl(0, 0%, 7%);
+}
+
+@font-face {
+  font-family: Figtree-500;
+  src: url("../assets/fonts/static/Figtree-Medium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: Figtree-800;
+  src: url("../assets/fonts/static/Figtree-ExtraBold.ttf");
+  font-weight: 800;
+}
+
+.attribution {
+  font-size: 16px;
+  text-align: center;
+  margin-top: 2rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  background: var(--color-yellow);
+  font-family: Figtree-500;
+}
+
+.container {
+  max-width: 320px;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards {
+  /* padding: 4rem 0rem; */
+}
+
+.card {
+  background: var(--color-white);
+  border: 1px solid var(--color-gray-950);
+  box-shadow: 9px 9px 0px -1px var(--color-gray-950);
+  border-radius: 1rem;
+  padding: 1rem;
+  display: grid;
+  gap: 0.8rem;
+
+  .fs-200 {
+    font-size: 0.8rem;
+  }
+
+  img {
+    border-radius: inherit;
+    width: 100%;
+  }
+
+  .badge {
+    background: var(--color-yellow);
+    padding: 0.2rem 0.6rem;
+    border-radius: 0.2rem;
+    font-family: Figtree-800;
+  }
+
+  p {
+    color: var(--color-gray-500);
+  }
+
+  h2 {
+    font-family: Figtree-800;
+  }
+
+  .avatar-container {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    font-family: Figtree-800;
+
+    img {
+      width: 2rem;
+    }
+  }
+}
