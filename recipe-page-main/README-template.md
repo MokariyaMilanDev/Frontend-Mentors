@@ -2,7 +2,7 @@
 
 This is a solution to the [Recipe page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Table of contents
+<!-- ## Table of contents
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
@@ -14,9 +14,9 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
+- [Acknowledgments](#acknowledgments) -->
 
-## Overview
+<!-- ## Overview -->
 
 ### Screenshot
 
@@ -25,25 +25,25 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 ### Links
 
 - Solution URL: [GitHub](https://github.com/MokariyaMilanDev/Frontend-Mentors/tree/main/10-03-2025/recipe-page-main)
-- Live Site URL: [Live](https://mokariyamilandev.github.io/Frontend-Mentors/recipe-page-main/src/index.html)
+- Live Site URL: [View](https://mokariyamilandev.github.io/Frontend-Mentors/recipe-page-main/src/index.html)
 
-## My process
+<!-- ## My process -->
 
 ### Built with
 
 - HTML
 - CSS
 
-### What I learned
+<!-- ### What I learned -->
 
-### Continued development
+<!-- ### Continued development -->
 
-### Useful resources
+<!-- ### Useful resources -->
 
-## Author
+<!-- ## Author -->
 
 <!-- - Website - [Add your name here](https://www.your-site.com)
 - Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
 - Twitter - [@yourusername](https://www.twitter.com/yourusername) -->
 
-## Acknowledgments
+<!-- ## Acknowledgments -->
