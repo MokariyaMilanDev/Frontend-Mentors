@@ -9,3 +9,8 @@
 
 - Live Site URL: [View](https://mokariyamilandev.github.io/Frontend-Mentors/blog-preview-card-main/src/index.html)
 - Solution URL: [GitHub](https://github.com/MokariyaMilanDev/Frontend-Mentors/tree/main/blog-preview-card-main)
+
+## Browser extensions manager UI
+
+- Live Site URL: [View](https://mokariyamilandev.github.io/Frontend-Mentors/browser-extensions-manager-ui-main/src/index.html)
+- Solution URL: [GitHub](https://github.com/MokariyaMilanDev/Frontend-Mentors/tree/main/browser-extensions-manager-ui-main)
