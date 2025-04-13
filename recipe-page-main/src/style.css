@@ -14,6 +14,13 @@
   --rose-50: hsl(330, 100%, 98%);
   --brown-800: hsl(14, 45%, 36%);
   --stone-900: hsl(24, 5%, 18%);
+
+  --fs-400: medium;
+  --fs-600: x-large;
+  --fs-700: xx-large;
+
+  --size-1: 1em;
+  --size-2: 2em;
 }
 
 @font-face {
@@ -64,13 +71,24 @@
 }
 
 .fs-400 {
-  font-size: medium;
+  font-size: var(--fs-400);
 }
 .fs-600 {
-  font-size: x-large;
+  font-size: var(--fs-600);
 }
 .fs-700 {
-  font-size: xx-large;
+  font-size: var(--fs-700);
+}
+
+@media screen and (max-width: 375px) {
+  :root {
+    /* --fs-400: small; */
+    --fs-600: large;
+    --fs-700: x-large;
+
+    --size-1: 0.6em;
+    --size-2: 1.2em;
+  }
 }
 
 .width-100 {
@@ -78,39 +96,39 @@
 }
 
 .p-1 {
-  padding: 1rem;
+  padding: var(--size-1);
 }
 .p-i-1 {
-  padding-inline: 1rem;
+  padding-inline: var(--size-1);
 }
 .p-i-2 {
-  padding-inline: 2rem;
+  padding-inline: var(--size-2);
 }
 .p-b-1 {
-  padding-block: 1rem;
+  padding-block: var(--size-1);
 }
 .p-2 {
-  padding: 2rem;
+  padding: var(--size-2);
 }
 .p-5 {
   padding: 5rem;
 }
 
 .m-1 {
-  margin: 1rem;
+  margin: var(--size-1);
 }
 .m-b-1 {
-  margin-block: 1rem;
+  margin-block: var(--size-1);
 }
 .m-i-1 {
-  margin-inline: 1rem;
+  margin-inline: var(--size-1);
 }
 .m-i-2 {
-  margin-inline: 2rem;
+  margin-inline: var(--size-2);
 }
 
 .br-1 {
-  border-radius: 1rem;
+  border-radius: var(--size-1);
 }
 
 .grid {
@@ -118,10 +136,10 @@
   gap: 0.4rem;
 }
 .g-1 {
-  gap: 1rem;
+  gap: var(--size-1);
 }
 .g-2 {
-  gap: 2rem;
+  gap: var(--size-2);
 }
 .g-3 {
   gap: 3rem;
@@ -148,10 +166,6 @@
 .container {
   max-width: 750px;
   margin: 0 auto;
-}
-
-body {
-  padding: 5rem;
 }
 
 .header img {
