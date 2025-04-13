@@ -57,26 +57,25 @@
       <header>
         <h2>Extensions List</h2>
 
-        <div>
-          <button
-            class="button-reset p-b-2 p-i-4 br-rect fw-700"
-            data-active="true">
+        <ul id="extensions-sort">
+          <button class="button-reset p-b-2 p-i-4 br-rect fw-700" value="all">
             All
           </button>
           <button
             class="button-reset p-b-2 p-i-4 br-rect fw-700"
-            data-active="false">
+            value="active">
             Active
           </button>
           <button
             class="button-reset p-b-2 p-i-4 br-rect fw-700"
-            data-active="false">
+            value="inactive">
             Inactive
           </button>
-        </div>
+        </ul>
       </header>
+
       <div id="extensions-container" class="extensions-container | grid g-2">
-        <article class="extension-card">
+        <!-- <article class="extension-card" data-active="true">
           <header>
             <img src="../assets/images/logo-devlens.svg" alt="DevLens" />
             <div>
@@ -87,7 +86,8 @@
             </div>
           </header>
           <footer class="flex align-center justify-between">
-            <button class="button-reset p-b-1 p-i-3 br-rect fw-700">
+            <button
+              class="extension-active-button | button-reset p-b-1 p-i-3 br-rect fw-700">
               Active
             </button>
 
@@ -95,7 +95,7 @@
           </footer>
         </article>
 
-        <article class="extension-card">
+        <article class="extension-card" data-active="true">
           <header class="grid gc-auto-1fr g-2">
             <img src="../assets/images/logo-style-spy.svg" alt="DevLens" />
             <div>
@@ -112,7 +112,7 @@
           </footer>
         </article>
 
-        <article class="extension-card">
+        <article class="extension-card" data-active="false">
           <header class="grid gc-auto-1fr g-2">
             <img src="../assets/images/logo-speed-boost.svg" alt="DevLens" />
             <div>
@@ -131,7 +131,7 @@
           </footer>
         </article>
 
-        <article class="extension-card">
+        <article class="extension-card" data-active="true">
           <header class="grid gc-auto-1fr g-2">
             <img src="../assets/images/logo-json-wizard.svg" alt="DevLens" />
             <div>
@@ -150,7 +150,7 @@
           </footer>
         </article>
 
-        <article class="extension-card">
+        <article class="extension-card" data-active="true">
           <header class="grid gc-auto-1fr g-2">
             <img src="../assets/images/logo-tab-master-pro.svg" alt="DevLens" />
             <div>
@@ -167,7 +167,7 @@
           </footer>
         </article>
 
-        <article class="extension-card">
+        <article class="extension-card" data-active="false">
           <header class="grid gc-auto-1fr g-2">
             <img src="../assets/images/logo-viewport-buddy.svg" alt="DevLens" />
             <div>
@@ -187,7 +187,7 @@
           </footer>
         </article>
 
-        <article class="extension-card">
+        <article class="extension-card" data-active="true">
           <header class="grid gc-auto-1fr g-2">
             <img src="../assets/images/logo-markup-notes.svg" alt="DevLens" />
             <div>
@@ -207,7 +207,7 @@
           </footer>
         </article>
 
-        <article class="extension-card">
+        <article class="extension-card" data-active="false">
           <header class="grid gc-auto-1fr g-2">
             <img src="../assets/images/logo-grid-guides.svg" alt="DevLens" />
             <div>
@@ -226,7 +226,7 @@
           </footer>
         </article>
 
-        <article class="extension-card">
+        <article class="extension-card" data-active="true">
           <header class="grid gc-auto-1fr g-2">
             <img src="../assets/images/logo-palette-picker.svg" alt="DevLens" />
             <div>
@@ -243,7 +243,7 @@
           </footer>
         </article>
 
-        <article class="extension-card">
+        <article class="extension-card" data-active="true">
           <header class="grid gc-auto-1fr g-2">
             <img src="../assets/images/logo-link-checker.svg" alt="DevLens" />
             <div>
@@ -260,7 +260,7 @@
           </footer>
         </article>
 
-        <article class="extension-card">
+        <article class="extension-card" data-active="false">
           <header class="grid gc-auto-1fr g-2">
             <img src="../assets/images/logo-dom-snapshot.svg" alt="DevLens" />
             <div>
@@ -277,7 +277,7 @@
           </footer>
         </article>
 
-        <article class="extension-card">
+        <article class="extension-card" data-active="true">
           <header class="grid gc-auto-1fr g-2">
             <img src="../assets/images/logo-console-plus.svg" alt="DevLens" />
             <div>
@@ -294,7 +294,7 @@
 
             <input type="checkbox" name="" id="" />
           </footer>
-        </article>
+        </article> -->
       </div>
     </section>
 
@@ -307,5 +307,7 @@
         >Mokariya Milan</a
       >.
     </div>
+
+    <script src="./main.js" type="module"></script>
   </body>
 </html>

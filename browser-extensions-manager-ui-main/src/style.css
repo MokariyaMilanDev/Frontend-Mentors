@@ -328,13 +328,14 @@ a[class] {
       align-items: center;
       gap: var(--size-2);
 
-      & > [data-active="true"] {
-        background-color: var(--color-red-500);
-        color: var(--color-neutral-100);
-      }
-      & > [data-active="false"] {
+      & > button {
         background-color: var(--color-neutral-700);
         color: var(--color-neutral-100);
+
+        &[data-active="true"] {
+          background-color: var(--color-red-500);
+          color: var(--color-neutral-100);
+        }
       }
     }
   }
@@ -373,10 +374,18 @@ a[class] {
   }
 
   & > footer {
-    & > :first-child {
-      font-size: var(--fs-200);
-      border: 1px solid var(--color-neutral-600);
+    display: flex;
+    gap: var(--size-2);
+    align-items: center;
+    justify-content: space-between;
+
+    & > button {
       background-color: inherit;
+      border-radius: 50vh;
+      font-weight: 700;
+      font-size: var(--fs-200);
+      padding: var(--size-1) var(--size-3);
+      border: 1px solid var(--color-neutral-600);
     }
 
     & > input[type="checkbox"] {
