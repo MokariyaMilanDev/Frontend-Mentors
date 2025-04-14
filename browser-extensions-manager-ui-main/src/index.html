@@ -12,19 +12,10 @@
 
     <title>Frontend Mentor | Browser extensions manager UI</title>
 
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body class="p-b-5 grid g-5 gr-auto-1fr">
-    <header class="bg-neutral-800 p-2 br-2 flex align-center justify-between">
+    <header id="main-header" class="p-2 br-2 flex align-center justify-between">
       <a href="/" class="flex">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -48,8 +39,12 @@
         </svg>
       </a>
 
-      <button class="button-reset bg-neutral-700 p-2 br-2 flex">
-        <img src="../assets/images/icon-sun.svg" alt="Dark Mode Icon" />
+      <button
+        type="button"
+        id="color-schema-toggle"
+        class="button-reset p-2 br-2 flex"
+        onclick="toggleColorSchema(this)">
+        <img src="../assets/images/icon-sun.svg" alt="" />
       </button>
     </header>
 
@@ -75,226 +70,7 @@
       </header>
 
       <div id="extensions-container" class="extensions-container | grid g-2">
-        <!-- <article class="extension-card" data-active="true">
-          <header>
-            <img src="../assets/images/logo-devlens.svg" alt="DevLens" />
-            <div>
-              <h6>DevLens</h6>
-              <p>
-                Quickly inspect page layouts and visualize element boundaries.
-              </p>
-            </div>
-          </header>
-          <footer class="flex align-center justify-between">
-            <button
-              class="extension-active-button | button-reset p-b-1 p-i-3 br-rect fw-700">
-              Active
-            </button>
-
-            <input type="checkbox" name="" id="" />
-          </footer>
-        </article>
-
-        <article class="extension-card" data-active="true">
-          <header class="grid gc-auto-1fr g-2">
-            <img src="../assets/images/logo-style-spy.svg" alt="DevLens" />
-            <div>
-              <h6>StyleSpy</h6>
-              <p>Instantly analyze and copy CSS from any webpage element.</p>
-            </div>
-          </header>
-          <footer class="flex align-center justify-between">
-            <button class="button-reset p-b-1 p-i-3 br-rect fw-700">
-              Active
-            </button>
-
-            <input type="checkbox" name="" id="" />
-          </footer>
-        </article>
-
-        <article class="extension-card" data-active="false">
-          <header class="grid gc-auto-1fr g-2">
-            <img src="../assets/images/logo-speed-boost.svg" alt="DevLens" />
-            <div>
-              <h6>SpeedBoost</h6>
-              <p>
-                Optimizes browser resource usage to accelerate page loading.
-              </p>
-            </div>
-          </header>
-          <footer class="flex align-center justify-between">
-            <button class="button-reset p-b-1 p-i-3 br-rect fw-700">
-              Active
-            </button>
-
-            <input type="checkbox" name="" id="" />
-          </footer>
-        </article>
-
-        <article class="extension-card" data-active="true">
-          <header class="grid gc-auto-1fr g-2">
-            <img src="../assets/images/logo-json-wizard.svg" alt="DevLens" />
-            <div>
-              <h6>JSONWizard</h6>
-              <p>
-                Formats, validates, and prettifies JSON responses in-browser.
-              </p>
-            </div>
-          </header>
-          <footer class="flex align-center justify-between">
-            <button class="button-reset p-b-1 p-i-3 br-rect fw-700">
-              Active
-            </button>
-
-            <input type="checkbox" name="" id="" />
-          </footer>
-        </article>
-
-        <article class="extension-card" data-active="true">
-          <header class="grid gc-auto-1fr g-2">
-            <img src="../assets/images/logo-tab-master-pro.svg" alt="DevLens" />
-            <div>
-              <h6>TabMaster Pro</h6>
-              <p>Organizes browser tabs into groups and sessions.</p>
-            </div>
-          </header>
-          <footer class="flex align-center justify-between">
-            <button class="button-reset p-b-1 p-i-3 br-rect fw-700">
-              Active
-            </button>
-
-            <input type="checkbox" name="" id="" />
-          </footer>
-        </article>
-
-        <article class="extension-card" data-active="false">
-          <header class="grid gc-auto-1fr g-2">
-            <img src="../assets/images/logo-viewport-buddy.svg" alt="DevLens" />
-            <div>
-              <h6>ViewportBuddy</h6>
-              <p>
-                Simulates various screen resolutions directly within the
-                browser.
-              </p>
-            </div>
-          </header>
-          <footer class="flex align-center justify-between">
-            <button class="button-reset p-b-1 p-i-3 br-rect fw-700">
-              Active
-            </button>
-
-            <input type="checkbox" name="" id="" />
-          </footer>
-        </article>
-
-        <article class="extension-card" data-active="true">
-          <header class="grid gc-auto-1fr g-2">
-            <img src="../assets/images/logo-markup-notes.svg" alt="DevLens" />
-            <div>
-              <h6>Markup Notes</h6>
-              <p>
-                Enables annotation and notes directly onto webpages for
-                collaborative debugging.
-              </p>
-            </div>
-          </header>
-          <footer class="flex align-center justify-between">
-            <button class="button-reset p-b-1 p-i-3 br-rect fw-700">
-              Active
-            </button>
-
-            <input type="checkbox" name="" id="" />
-          </footer>
-        </article>
-
-        <article class="extension-card" data-active="false">
-          <header class="grid gc-auto-1fr g-2">
-            <img src="../assets/images/logo-grid-guides.svg" alt="DevLens" />
-            <div>
-              <h6>GridGuides</h6>
-              <p>
-                Overlay customizable grids and alignment guides on any webpage.
-              </p>
-            </div>
-          </header>
-          <footer class="flex align-center justify-between">
-            <button class="button-reset p-b-1 p-i-3 br-rect fw-700">
-              Active
-            </button>
-
-            <input type="checkbox" name="" id="" />
-          </footer>
-        </article>
-
-        <article class="extension-card" data-active="true">
-          <header class="grid gc-auto-1fr g-2">
-            <img src="../assets/images/logo-palette-picker.svg" alt="DevLens" />
-            <div>
-              <h6>Palette Picker</h6>
-              <p>Instantly extracts color palettes from any webpage.</p>
-            </div>
-          </header>
-          <footer class="flex align-center justify-between">
-            <button class="button-reset p-b-1 p-i-3 br-rect fw-700">
-              Active
-            </button>
-
-            <input type="checkbox" name="" id="" />
-          </footer>
-        </article>
-
-        <article class="extension-card" data-active="true">
-          <header class="grid gc-auto-1fr g-2">
-            <img src="../assets/images/logo-link-checker.svg" alt="DevLens" />
-            <div>
-              <h6>LinkChecker</h6>
-              <p>Scans and highlights broken links on any page.</p>
-            </div>
-          </header>
-          <footer class="flex align-center justify-between">
-            <button class="button-reset p-b-1 p-i-3 br-rect fw-700">
-              Active
-            </button>
-
-            <input type="checkbox" name="" id="" />
-          </footer>
-        </article>
-
-        <article class="extension-card" data-active="false">
-          <header class="grid gc-auto-1fr g-2">
-            <img src="../assets/images/logo-dom-snapshot.svg" alt="DevLens" />
-            <div>
-              <h6>DOM Snapshot</h6>
-              <p>Capture and export DOM structures quickly.</p>
-            </div>
-          </header>
-          <footer class="flex align-center justify-between">
-            <button class="button-reset p-b-1 p-i-3 br-rect fw-700">
-              Active
-            </button>
-
-            <input type="checkbox" name="" id="" />
-          </footer>
-        </article>
-
-        <article class="extension-card" data-active="true">
-          <header class="grid gc-auto-1fr g-2">
-            <img src="../assets/images/logo-console-plus.svg" alt="DevLens" />
-            <div>
-              <h6>ConsolePlus</h6>
-              <p>
-                Enhanced developer console with advanced filtering and logging.
-              </p>
-            </div>
-          </header>
-          <footer class="flex align-center justify-between">
-            <button class="button-reset p-b-1 p-i-3 br-rect fw-700">
-              Active
-            </button>
-
-            <input type="checkbox" name="" id="" />
-          </footer>
-        </article> -->
+        <!-- Extension cards will be dynamically generated by JavaScript -->
       </div>
     </section>
 
