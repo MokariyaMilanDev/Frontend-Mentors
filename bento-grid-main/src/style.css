@@ -182,7 +182,7 @@ img {
   }
 }
 
-@media only screen and (width > 375px) {
+@media only screen and (width > 768px) {
   :root {
     --fs-300: 1em;
     --fs-600: 2em;
