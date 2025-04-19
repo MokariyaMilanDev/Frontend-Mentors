@@ -46,10 +46,16 @@ i {
   font-style: italic;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .color-white {
   color: var(--white);
 }
-.color-purpole-500 {
+.color-purple-500 {
   color: var(--purple-500);
 }
 .color-yellow-500 {
@@ -59,10 +65,10 @@ i {
 .bg-white {
   background-color: var(--white);
 }
-.bg-purpole-100 {
+.bg-purple-100 {
   background-color: var(--purple-100);
 }
-.bg-purpole-500 {
+.bg-purple-500 {
   background-color: var(--purple-500);
 }
 .bg-yellow-100 {
@@ -147,114 +153,112 @@ i {
   justify-content: center;
 }
 
-@media only screen and (width > 375px) {
-  :root {
-    --fs-300: 0.6em;
-    --fs-600: 0.8em;
-    --fs-700: 1em;
-    --fs-900: 1.2em;
-
-    --size-1: 0.6em;
-  }
-
-  body {
-    background-color: red;
-  }
-
-  .main-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
 .main-grid {
   & > article {
     border-radius: 0.6em;
     overflow: hidden;
+    align-content: flex-start;
+    align-items: center;
+    height: 100%;
   }
 
-  /* & > :nth-child(1) {
-    grid-row: 1 / 6;
-    grid-column: 1 / 2;
-  }
-
-  & > :nth-child(2) {
-    grid-column: 2 / 4;
-    grid-row: 1 / 5;
-
-    & > * {
-      text-align: center;
-      line-height: 1;
-    }
-
-    & > img {
-      width: 30%;
-    }
-
-    & > p {
-      margin-top: 0.4em;
+  .social-media {
+    img {
+      width: 50%;
     }
   }
 
-  & > :nth-child(3) {
-    grid-column: 4 / 5;
-    grid-row: 1 / 7;
-    grid-template-rows: auto 1fr auto;
+  .faster-autdience {
+    grid-template-rows: auto auto 1fr;
 
-    & > img {
-      height: 100%;
-      object-fit: cover;
-      object-position: left;
+    h1 {
+      font-size: 4em;
+      font-weight: 600;
+    }
+
+    img {
+      width: 70%;
     }
   }
+}
 
-  & > :nth-child(4) {
-    grid-row: 6 / 10;
-    grid-column: 1 / 2;
-    grid-template-rows: subgrid;
+@media only screen and (width > 375px) {
+  :root {
+    --fs-300: 1em;
+    --fs-600: 2em;
+    --fs-700: 2.4em;
+    --fs-900: 3.6em;
 
-    & > :first-child {
-      grid-row: 1 / 2;
-    }
-    & > :last-child {
-      grid-row: 2 / 4;
-    }
+    --size-1: 1.5em;
+    --size-2: 2em;
   }
 
-  & > :nth-child(5) {
-    grid-row: 5 / 7;
-    grid-column: 2 / 3;
+  .main-grid {
+    grid-template:
+      "create-and social-media    social-media   schedule-to" auto
+      "create-and social-media    social-media   schedule-to" auto
+      "create-and social-media    social-media   schedule-to" auto
+      "create-and social-media    social-media   schedule-to" auto
+      "create-and manage-multiple maintain-a     schedule-to" auto
+      "write-your manage-multiple maintain-a     schedule-to" auto
+      "write-your manage-multiple maintain-a     schedule-to" auto
+      "write-your faster-audience grow-followers grow-followers" auto
+      "write-your faster-audience grow-followers grow-followers" auto
+      "write-your faster-audience grow-followers grow-followers" auto;
 
-    & > img {
-      width: 130%;
+    img {
+      width: 100%;
+      display: block;
+    }
+
+    .social-media {
+      grid-area: social-media;
+    }
+    .manage-multiple {
+      grid-area: manage-multiple;
+    }
+    .maintain-a {
+      grid-area: maintain-a;
+    }
+    .schedule-to {
+      grid-area: schedule-to;
+
+      /* //// */
+      padding-inline-end: 0;
+
+      img {
+        width: 140%;
+      }
+    }
+    .grow-followers {
+      grid-area: grow-followers;
+      grid-template-columns: 2fr 3fr;
+
+      img {
+        height: 100%;
+      }
+    }
+    .faster-autdience {
+      grid-area: faster-audience;
+    }
+    .create-and {
+      grid-area: create-and;
+
+      /* //// */
+
+      img {
+        width: 90%;
+      }
+    }
+    .write-your {
+      grid-area: write-your;
+      grid-template-rows: subgrid;
+
+      img {
+        grid-row: 5 span;
+      }
     }
   }
-
-  & > :nth-child(6) {
-    grid-column: 3 / 4;
-    grid-row: 5 / 7;
-    grid-template-rows: auto minmax(auto, 100px);
-
-    & > img {
-      height: 100%;
-      object-fit: cover;
-      object-position: top;
-    }
-  }
-
-  & > :nth-child(7) {
-    grid-column: 2 / 3;
-    grid-row: 7 / 10;
-
-    & > h2 {
-      font-weight: 500;
-    }
-  }
-
-  & > :nth-child(8) {
-    grid-column: 3 / 5;
-    grid-row: 7 / 10;
-    grid-template-columns: 2fr 3fr;
-  } */
 }
 
 .attribution {

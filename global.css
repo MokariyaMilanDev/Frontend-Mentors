@@ -24,6 +24,7 @@
   --color-brown-800: hsl(14, 45%, 36%);
   --color-yellow-800: hsl(47, 88%, 63%);
   --color-red-700: hsl(3, 77%, 44%);
+  --bento-grid-main-purple: hsl(256, 67%, 59%);
 
   --font-size-smaller: 0.8em;
   --font-size-small: 1rem;
@@ -139,6 +140,9 @@ ul[class-name] {
 .bg-red-700 {
   background-color: var(--color-red-700);
 }
+.bg-bento-grid-main-purple {
+  background-color: var(--bento-grid-main-purple);
+}
 
 .color-neutral-100 {
   color: var(--color-neutral-100);
@@ -182,6 +186,9 @@ ul[class-name] {
 }
 .color-red-700 {
   color: var(--color-red-700);
+}
+.color-bento-grid-main-purple {
+  color: var(--bento-grid-main-purple);
 }
 
 .fw-100 {
