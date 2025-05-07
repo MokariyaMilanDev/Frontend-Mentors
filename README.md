@@ -14,3 +14,9 @@
 
 - Live Site URL: [View](https://mokariyamilandev.github.io/Frontend-Mentors/browser-extensions-manager-ui-main/src/index.html)
 - Solution URL: [GitHub](https://github.com/MokariyaMilanDev/Frontend-Mentors/tree/main/browser-extensions-manager-ui-main)
+
+
+## Bento Grid
+
+- Live Site URL: [View](https://mokariyamilandev.github.io/Frontend-Mentors/bento-grid-main/src/index.html)
+- Solution URL: [GitHub](https://github.com/MokariyaMilanDev/Frontend-Mentors/tree/main/bento-grid-main)
